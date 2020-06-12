@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		02FF8C3C249304E200B163F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FF8C3A249304E200B163F2 /* Main.storyboard */; };
 		02FF8C3E249304E300B163F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FF8C3D249304E300B163F2 /* Assets.xcassets */; };
 		02FF8C41249304E300B163F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FF8C3F249304E300B163F2 /* LaunchScreen.storyboard */; };
+		02FF8C4A249305C600B163F2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FF8C49249305C600B163F2 /* CoreMotion.framework */; };
+		02FF8C4C249305DE00B163F2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FF8C4B249305DE00B163F2 /* MessageUI.framework */; };
+		F628D7D2A0FBCAAE3781C62E /* Pods_Pedometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409792C6FDB4CCFD2243B9E /* Pods_Pedometer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		02FF8C3D249304E300B163F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02FF8C40249304E300B163F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02FF8C42249304E300B163F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02FF8C49249305C600B163F2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		02FF8C4B249305DE00B163F2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5409792C6FDB4CCFD2243B9E /* Pods_Pedometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pedometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F6E744DB239DF613B6B944 /* Pods-Pedometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.release.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.release.xcconfig"; sourceTree = "<group>"; };
+		E203D5A4911FD56E45047741 /* Pods-Pedometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pedometer.debug.xcconfig"; path = "Target Support Files/Pods-Pedometer/Pods-Pedometer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FF8C4C249305DE00B163F2 /* MessageUI.framework in Frameworks */,
+				02FF8C4A249305C600B163F2 /* CoreMotion.framework in Frameworks */,
+				F628D7D2A0FBCAAE3781C62E /* Pods_Pedometer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				02FF8C31249304E200B163F2 /* Pedometer */,
 				02FF8C30249304E200B163F2 /* Products */,
+				02FF8C48249305C500B163F2 /* Frameworks */,
+				4A7BD57CBD230E0BA8FAE82E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,25 @@
 			path = Pedometer;
 			sourceTree = "<group>";
 		};
+		02FF8C48249305C500B163F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02FF8C4B249305DE00B163F2 /* MessageUI.framework */,
+				02FF8C49249305C600B163F2 /* CoreMotion.framework */,
+				5409792C6FDB4CCFD2243B9E /* Pods_Pedometer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A7BD57CBD230E0BA8FAE82E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E203D5A4911FD56E45047741 /* Pods-Pedometer.debug.xcconfig */,
+				D3F6E744DB239DF613B6B944 /* Pods-Pedometer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02FF8C45249304E300B163F2 /* Build configuration list for PBXNativeTarget "Pedometer" */;
 			buildPhases = (
+				70D3BE730253EA923D62BED6 /* [CP] Check Pods Manifest.lock */,
 				02FF8C2B249304E200B163F2 /* Sources */,
 				02FF8C2C249304E200B163F2 /* Frameworks */,
 				02FF8C2D249304E200B163F2 /* Resources */,
+				03C992ACC9A9CFD2797F11C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C992ACC9A9CFD2797F11C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pedometer/Pods-Pedometer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pedometer/Pods-Pedometer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pedometer/Pods-Pedometer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D3BE730253EA923D62BED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pedometer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02FF8C2B249304E200B163F2 /* Sources */ = {
@@ -286,6 +362,7 @@
 		};
 		02FF8C46249304E300B163F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E203D5A4911FD56E45047741 /* Pods-Pedometer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,12 +374,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Pedometer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		02FF8C47249304E300B163F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F6E744DB239DF613B6B944 /* Pods-Pedometer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Pedometer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
