@@ -1,0 +1,12 @@
+webアプリケーションを構築するために登場したJavaのEditionはJavaEEである,0
+JSPの中に記述できる言語はJava、HTML、CSSである,0
+ServletはJavaSEの技術でない,0
+Servletは画面表示するための処理は記述できない,1
+設計思想としてサーバ処理はServletではなくJSPに全て書くことが理想的である,1
+ServletはJavaプログラムである,0
+EJBはJava EEの機能である,0
+HTMLはJava EEの機能である,1
+JSPはJava EEの機能である,0
+MySQLはWebコンテナの種類の一つである,1
+Apache TomcatはWebコンテナの種類の一つである,0
+SQL ServerはIBMが開発したRDBMSである,1
