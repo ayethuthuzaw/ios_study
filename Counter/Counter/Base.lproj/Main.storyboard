@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o03-p6-CrU">
+                                <rect key="frame" x="10" y="54" width="394" height="310"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd5-JY-l3Q">
+                                <rect key="frame" x="15" y="374" width="150" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vd5-JY-l3Q" secondAttribute="height" multiplier="45:100" id="OYr-1c-bn1"/>
+                                </constraints>
+                                <state key="normal" image="btn_plus"/>
+                                <connections>
+                                    <action selector="plusPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08L-eW-Vp4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s2-v2-f7E">
+                                <rect key="frame" x="15" y="722" width="384" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3s2-v2-f7E" secondAttribute="height" multiplier="177:65" constant="25" id="Ul2-Sd-yaK"/>
+                                </constraints>
+                                <state key="normal" image="btn_reset"/>
+                                <connections>
+                                    <action selector="resetPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2s-8e-2Cv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xue-Id-C3X">
+                                <rect key="frame" x="249" y="374" width="150" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xue-Id-C3X" secondAttribute="height" multiplier="45:100" id="uSO-en-yDz"/>
+                                </constraints>
+                                <state key="normal" image="btn_minus"/>
+                                <connections>
+                                    <action selector="minusPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1lc-hK-d9s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3s2-v2-f7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3Ah-02-dtd"/>
+                            <constraint firstItem="3s2-v2-f7E" firstAttribute="trailing" secondItem="Xue-Id-C3X" secondAttribute="trailing" id="GWK-bK-MHM"/>
+                            <constraint firstItem="o03-p6-CrU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSf-jZ-hsm"/>
+                            <constraint firstItem="3s2-v2-f7E" firstAttribute="top" secondItem="Xue-Id-C3X" secondAttribute="bottom" constant="15" id="Lfk-Zg-UsN"/>
+                            <constraint firstItem="o03-p6-CrU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="TN3-yM-Qw4"/>
+                            <constraint firstItem="o03-p6-CrU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Va1-iv-tc5"/>
+                            <constraint firstItem="Vd5-JY-l3Q" firstAttribute="width" secondItem="3s2-v2-f7E" secondAttribute="width" multiplier="0.390625" id="Yuw-R4-oqI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o03-p6-CrU" secondAttribute="trailing" constant="10" id="kpn-xq-nEG"/>
+                            <constraint firstItem="3s2-v2-f7E" firstAttribute="leading" secondItem="Vd5-JY-l3Q" secondAttribute="leading" id="ocd-MP-TsV"/>
+                            <constraint firstItem="3s2-v2-f7E" firstAttribute="top" secondItem="Vd5-JY-l3Q" secondAttribute="bottom" constant="15" id="pM2-p0-428"/>
+                            <constraint firstItem="Vd5-JY-l3Q" firstAttribute="top" secondItem="o03-p6-CrU" secondAttribute="bottom" constant="10" id="t9j-S8-3pO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3s2-v2-f7E" secondAttribute="trailing" constant="15" id="uml-gE-xJX"/>
+                            <constraint firstItem="Xue-Id-C3X" firstAttribute="width" secondItem="3s2-v2-f7E" secondAttribute="width" multiplier="0.390625" id="vaH-T3-Qp1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3s2-v2-f7E" secondAttribute="bottom" constant="8" id="xOL-u9-Y9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="o03-p6-CrU" id="K3U-JN-Jk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_minus" width="150" height="150"/>
+        <image name="btn_plus" width="150" height="150"/>
+        <image name="btn_reset" width="354" height="130"/>
+    </resources>
+</document>
