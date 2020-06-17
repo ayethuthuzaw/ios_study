@@ -60,7 +60,7 @@
                                 </constraints>
                                 <state key="normal" image="btn_start"/>
                                 <connections>
-                                    <segue destination="rjn-wH-PLT" kind="showDetail" animates="NO" id="3qg-ct-kGc"/>
+                                    <segue destination="rjn-wH-PLT" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="3qg-ct-kGc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00.0000秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-mw-yuh">
@@ -135,41 +135,41 @@
             <objects>
                 <viewController id="rjn-wH-PLT" customClass="PlayViewController" customModule="GestureFlash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wLl-8A-4lc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eqF-OU-gO7">
-                                <rect key="frame" x="15" y="229" width="384" height="384"/>
+                                <rect key="frame" x="15" y="256" width="384" height="384"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eqF-OU-gO7" secondAttribute="height" multiplier="1:1" id="KKp-tx-3zl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="経過時間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdK-PZ-P6R">
-                                <rect key="frame" x="10" y="10" width="82" height="24"/>
+                                <rect key="frame" x="10" y="54" width="82" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPM-F0-vm5">
-                                <rect key="frame" x="277" y="10" width="62" height="24"/>
+                                <rect key="frame" x="277" y="54" width="62" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGh-Ey-j5N">
-                                <rect key="frame" x="102" y="10" width="13" height="24"/>
+                                <rect key="frame" x="102" y="54" width="13" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2es-iL-X1o">
-                                <rect key="frame" x="349" y="10" width="13" height="24"/>
+                                <rect key="frame" x="349" y="54" width="13" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-KD-xi8">
-                                <rect key="frame" x="372" y="10" width="32" height="24"/>
+                                <rect key="frame" x="372" y="54" width="32" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -200,7 +200,7 @@
                         <outlet property="completedGesturesLabel" destination="2es-iL-X1o" id="mXx-OI-Yot"/>
                         <outlet property="gestureImage" destination="eqF-OU-gO7" id="aRj-sa-5LQ"/>
                         <outlet property="timeLabel" destination="TGh-Ey-j5N" id="5DU-X1-9jz"/>
-                        <segue destination="TB2-Is-xQa" kind="showDetail" identifier="toResultView" animates="NO" id="IBd-WU-1Ls"/>
+                        <segue destination="TB2-Is-xQa" kind="presentation" identifier="toResultView" animates="NO" modalPresentationStyle="fullScreen" id="IBd-WU-1Ls"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xo8-Ry-pbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,17 +212,17 @@
             <objects>
                 <viewController id="TB2-Is-xQa" customClass="ResultViewController" customModule="GestureFlash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J3u-Hg-c76">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お疲れ様でした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSp-UL-4Hg">
-                                <rect key="frame" x="15" y="60" width="384" height="30"/>
+                                <rect key="frame" x="15" y="104" width="384" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KR-Ts-Wzp">
-                                <rect key="frame" x="15" y="150" width="384" height="55"/>
+                                <rect key="frame" x="15" y="194" width="384" height="55"/>
                                 <string key="text">全てのジェスチャーを
 こなすのに</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -230,19 +230,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0000秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRt-Tb-9Jg">
-                                <rect key="frame" x="15" y="265" width="384" height="28"/>
+                                <rect key="frame" x="15" y="309" width="384" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かかりました！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-Kq-O3J">
-                                <rect key="frame" x="15" y="353" width="384" height="28"/>
+                                <rect key="frame" x="15" y="397" width="384" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jia-f6-LfD">
-                                <rect key="frame" x="15" y="685" width="384" height="88"/>
+                                <rect key="frame" x="15" y="739" width="384" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jia-f6-LfD" secondAttribute="height" multiplier="35:8" id="OuS-0B-2Ed"/>
                                 </constraints>
@@ -252,7 +252,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイスコア更新!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcx-CT-u0i">
-                                <rect key="frame" x="15" y="441" width="384" height="32.5"/>
+                                <rect key="frame" x="15" y="485" width="384" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
